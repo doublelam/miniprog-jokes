@@ -1,0 +1,24 @@
+/**index.wxss**/
+.scroll-container {
+  height: 80vh;
+}
+.actions-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+.joke-card {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.joke-title {
+  font-weight: bold;
+  padding-bottom: 8px;
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

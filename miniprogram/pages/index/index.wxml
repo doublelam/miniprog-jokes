@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+
+	<scroll-view class="scroll-container">
+		<view class="joke-card" wx:for="{{jokes}}">
+			<view class="joke-title">
+        <view>{{item.title}}</view>
+        <button style="margin: 0" open-type="share" size="mini">分享</button>
+      </view>
+			<view>{{item.content}}</view>
+		</view>
+	</scroll-view>
+	<view class="actions-wrapper">
+		<button bindtap="copyJoke">复制</button>
+		<button bindtap="getJokes" loading="{{loading}}">再来一条</button>
+	</view>
+</view>
